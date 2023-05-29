@@ -43,8 +43,8 @@
                 <li><a href="https://www.linkedin.com/in/gopal-johari-739061222/" target="_blank"><i
                             class="fab fa-linkedin-in"></i></a></li>
                 <li><a href="https://github.com/gopaljohari93/" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://github.com/gopaljohari93/PersonalPortfolio" target="_blank"><i
-                    class="fas fa-user-graduate"></i></a></li>
+                <li><a href="https://github.com/gopaljohari93/personal-portfolio" target="_blank"><i
+                            class="fas fa-user-graduate"></i></a></li>
             </ul>
         </div>
     </header>
@@ -88,7 +88,7 @@
                     <h3>years of experience</h3>
                 </div>
                 <div class="box">
-                    <span>10+</span>
+                    <span> <a href="https://github.com/gopaljohari93" style="color: #f9ca24;" target="_blank">10+ </a></span>
                     <h3>project completed</h3>
                 </div>
                 <div class="box">
@@ -202,7 +202,7 @@
                 </a>
             </div>
             <div class="box">
-                <a href="#" target="_blank">
+                <a href="https://gopaljohari93.github.io/seo-website/" target="_blank">
                     <img src="./images/portfolio-img/SEO-Landing-6.png" alt="seo-marketing">
                 </a>
             </div>
@@ -226,11 +226,16 @@
                 </div>
             </div>
 
-            <form action="">
-                <input type="text" placeholder="name" class="box">
-                <input type="email" placeholder="email" class="box">
-                <input type="text" placeholder="project" class="box">
-                <textarea rows="10" cols="30" placeholder="message..." class="box message"></textarea>
+            <form action="" onsubmit="return validatefrom()">
+                <input type="text" id="username" placeholder="Your name" class="box" autocomplete="off">
+                <p id="userError" class="error"></p>
+                <input type="email" id="email" placeholder="Email address" class="box" autocomplete="off">
+                <p id="emailError" class="error"></p>
+                <input type="text" id="project" placeholder="project" class="box" autocomplete="off">
+                <p id="projectError" class="error"></p>
+                <textarea rows="10" cols="30" id="message" placeholder="message..." class="box message"
+                    autocomplete="off"></textarea>
+                <p id="messageError" class="error"></p>
                 <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i></button>
             </form>
         </div>
